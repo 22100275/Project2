@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>style1</title>
+    <title>style2</title>
     <style>
         body {
-            font : 100% Courier New;
+            font : 100% verdana;
             margin : 20px;
             line-height : 26px;
-            background-color: black;
+            background-color: white;
         }
         * {
             color : #84c754;
@@ -18,22 +18,12 @@
             display : block;
         }
 
-        #top {
-            padding : 15px;
-        }
-        #top h1, #top p {
-            margin : 0;
-        }
-        h1 {
-            display : block;
-            font-size : 2em;
-            margin-block-start: 0.67em;
-            margin-block-end: 0.67em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight : bold;
+        
+        h1, h2, h3 {
+            color : #4CAF50;
         }
         p {
+            color : black;
             display: block;
             margin-block-start: 1em;
             margin-block-end : 1em;
@@ -45,24 +35,28 @@
             overflow : auto;
         }
         ul {
-            display: block;
-            list-style-type: disc;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            padding-inline-start: 40px;
+            padding : 0;
+            position: relative;
+            overflow : auto;
             
         }
         li {
+            width : 165px;
+            float : left;
+            background-color: #555555;
+            color : #ffffff;
+            list-style-type : none;
+            margin : 4px;
+            padding : 2px;
+            text-align: center;
             cursor: pointer;
         }
-        .menuitem:hover {
-            color : #ffffff;
-        }
-        .menuitem:nth-child(1) {
+        .menuitem:nth-child(2) {
             color:white;
-            font-weight :bold;
+            background-color : #04AA6D;
+        }
+        .menuitem:hover {
+            background-color: #000;
         }
         #main {
             padding : 10px;
@@ -70,32 +64,24 @@
         }
 
         #main a {
-            color : white;
+            color : black;
         }
 
         #sidebar {
-            color : white;
-            border : 1px solid white;
-            border-radius: 4px;
-            padding : 10px;
-            width : 320px;
-            top : 0;
-            right : 0;
-            position : absolute;
-            font-size : 80%;
-            line-height : 20px;
+            background-color: #f1f1f1;
+            border : 1px solid #d4d4d4;
+            padding-left : 10px;
         }
         
         #bottom {
-            border : 1px solid white;
-            border-radius: 4px;
-            color : white;
-            text-align : center;
+            color : black;
+            text-align: center;
             padding : 10px;
             font-size : 70%;
-            line-height : 14px;
+            line-height: 14px;
         }
         li a {
+            color : white;
             text-decoration: none;
         }
 
@@ -117,8 +103,8 @@
         <div class="wrapper">
          <div id="member">
            <ul id="menulist">
-             <li class="menuitem">Stylesheet 1
-             <li class="menuitem"><a href="style2.html">Stylesheet 2</a>
+             <li class="menuitem"><a href="style1.html">Stylesheet 1</a>
+             <li class="menuitem">Stylesheet 2
              <li class="menuitem">Stylesheet 3
              <li class="menuitem">Stylesheet 4
              <li class="menuitem"><a href="nostyle.html">No Stylesheet</a>
